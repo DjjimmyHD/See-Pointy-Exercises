@@ -28,6 +28,17 @@ namespace Testing
 
             var shippingPreference = ShippingMethods.Shipping.SecondDayDelivery;
             Console.WriteLine((int)shippingPreference);
+
+            var x = 3;
+            var y = x;
+                x = 4;
+            Console.WriteLine(y);
+
+            var namesArray = new string[3]{"foo","bar","bat"};
+            var namesArray2 = namesArray;
+                namesArray2[1] = "butts";
+            Console.WriteLine(namesArray[1]);
+
         }
     } 
 }
